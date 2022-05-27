@@ -7,12 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.sd.lib.stacktop.FStackTop
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        // 设置默认Item
-        _stackTop.setDefaultItem("0")
     }
 
     private val _stackTop = object : FStackTop<String>() {
